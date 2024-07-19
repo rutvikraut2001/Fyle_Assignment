@@ -51,6 +51,7 @@ export class AppComponent {
   userName;
   workoutTypesForChart;
   workoutMinutesForChart;
+  title: 'Fyle_Assignment';
   constructor(public fb: FormBuilder) {
     this.rows = [
       {
