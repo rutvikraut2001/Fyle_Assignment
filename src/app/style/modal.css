@@ -1,0 +1,216 @@
+body.modal-open {
+    overflow: hidden; /* Optional: hides body scroll bar when modal is open. */
+}
+
+.modal {
+    z-index: 52;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+    align-items: flex-start;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal .modal-dialog {
+    width: 100%;
+    max-width: 32rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    margin: auto;
+}
+
+.modal .modal-content {
+    position: relative;
+    background-color: white;
+    font-size: 1rem;
+    color: black;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.modal .modal-header > div {
+    background-color: #fbfbfb;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding-left: 1.25rem;
+    padding-right: 3.125rem;
+}
+
+.modal .modal-header .close {
+    position: absolute;
+    top: 0.75rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: #9ca3af;
+    right: 1.25rem;
+}
+
+.modal .modal-body {
+    padding-left: 1.25rem;
+    padding-top: 1.25rem;
+}
+
+.modal .modal-footer {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.modal-top .modal .modal-dialog {
+    margin: 0;
+}
+
+.no-animation .modal {
+    transition: none;
+}
+
+.extra-large-modal .modal-dialog {
+    max-width: 64rem;
+}
+
+.large-modal .modal-dialog {
+    max-width: 40rem;
+}
+
+.small-modal .modal-dialog {
+    max-width: 24rem;
+}
+
+.video-modal .modal-content {
+    background-color: transparent;
+}
+
+.video-modal .modal-body {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.video-modal .modal-header .close {
+    top: 0;
+    right: 0;
+}
+
+.video-modal .modal-dialog {
+    max-width: 48rem;
+}
+
+.animate .modal .modal-dialog {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate-fade-in .modal .modal-dialog {
+    animation-name: fadeIn;
+}
+
+.animate-slide-in-down .modal .modal-dialog {
+    animation-name: slideInDown;
+}
+
+.animate-fade-in-up .modal .modal-dialog {
+    animation-name: fadeInUp;
+}
+
+.animate-slide-in-up .modal .modal-dialog {
+    animation-name: slideInUp;
+}
+
+.animate-fade-in-left .modal .modal-dialog {
+    animation-name: fadeInLeft;
+}
+
+.animate-rotate-in-left .modal .modal-dialog {
+    animation-name: rotateInDownLeft;
+    transform-origin: left bottom;
+}
+
+.animate-rotate-in-right .modal .modal-dialog {
+    animation-name: rotateInDownRight;
+    transform-origin: right bottom;
+}
+
+.animate-fade-in-right .modal .modal-dialog {
+    animation-name: fadeInRight;
+}
+
+.animate-zoom-in-up .modal .modal-dialog {
+    animation-name: zoomInUp;
+}
+
+.custom-modal .modal .modal-header .close {
+    display: none;
+}
+
+.profile-modal .modal .modal-content {
+    background-color: var(--tw-bg-opacity: 1; background-color: #a0aec0);
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.profile-modal .modal .modal-dialog {
+    max-width: 18.75rem;
+}
+
+.profile-modal .modal .modal-header .close {
+    font-size: 1.625rem;
+}
+
+.profile-modal .modal .modal-footer {
+    justify-content: center;
+}
+
+.auth-modal .modal .modal-content,
+.slider-modal .modal .modal-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.auth-modal .modal .modal-dialog {
+    max-width: 24rem;
+}
+
+.auth-modal .modal .modal-header div {
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.auth-modal .modal .modal-header,
+.slider-modal .modal .modal-header {
+    position: relative;
+}
+
+.auth-modal .modal .modal-header .close,
+.slider-modal .modal .modal-header .close {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-modal .modal .modal-footer,
+.no-footer .modal .modal-footer {
+    display: none;
+}
+
+.no-footer .modal .modal-body {
+    padding-bottom: 1.25rem;
+}
+
+.slider-modal .modal .modal-body {
+    padding: 0;
+}
+
+.slider-modal .modal .modal-header .close {
+    right: 0;
+}
